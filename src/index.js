@@ -1,7 +1,7 @@
 // You should implement your task here.
 
 module.exports = function towelSort(matrix) {
-    if (matrix === []) {
+    if (matrix == [] || !matrix) {
         return [];
     } else {
         return matrix.reduce((array, item, i) => {
