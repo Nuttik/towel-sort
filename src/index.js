@@ -5,7 +5,7 @@ module.exports = function towelSort(matrix) {
         return [];
     } else {
         return matrix.reduce((array, item, i) => {
-            item.sort((a, b) => (i % 2 ? a - b : b - a)).map((e) =>
+            item.sort((a, b) => (i % 2 ? b - a : a - b)).map((e) =>
                 array.push(e)
             );
             return array;
