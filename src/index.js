@@ -5,5 +5,7 @@ module.exports = function towelSort(matrix) {
         .reduce(function (array, item) {
             return array.concat(item);
         }, [])
-        .sort();
+        .sort((a, b) => {
+            return a - b;
+        });
 };
